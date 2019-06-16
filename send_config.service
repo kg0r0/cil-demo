@@ -1,0 +1,10 @@
+[Unit]
+Description = Send Config to remote
+
+[Service]
+ExecStart = /opt/test_dir/scripts/run_send_config.sh
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
